@@ -282,3 +282,380 @@
 
 </body>
 </html>
+/* =========================
+   HISTORY PAGE
+========================= */
+
+.history-hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 140px 9% 90px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12, 38, 34, 0.97),
+            rgba(17, 52, 45, 0.78),
+            rgba(17, 52, 45, 0.35)
+        ),
+        url("https://images.unsplash.com/photo-1564769662533-4f00a87b4056?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+}
+
+.history-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(135deg, rgba(217, 183, 108, 0.12), transparent 40%),
+        linear-gradient(315deg, rgba(217, 183, 108, 0.08), transparent 40%);
+    pointer-events: none;
+}
+
+.history-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    color: #fff;
+}
+
+.history-label {
+    margin-bottom: 22px;
+    color: #d9b76c;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.history-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(50px, 7vw, 88px);
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.history-hero h1 span {
+    display: block;
+    color: #d9b76c;
+}
+
+.history-hero-content > p:last-child {
+    max-width: 600px;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   HISTORY INTRO
+========================= */
+
+.history-intro {
+    padding: 115px 10% 80px;
+    text-align: center;
+    background: #f4efe4;
+}
+
+.history-intro h2,
+.timeline-title h2,
+.history-end h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.1;
+    font-weight: 500;
+    color: #183c34;
+}
+
+.history-intro h2 span,
+.timeline-title h2 span,
+.history-end h2 span {
+    color: #a7833f;
+}
+
+.history-intro > p:last-child {
+    max-width: 700px;
+    margin: 25px auto 0;
+    color: #68736e;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline-section {
+    padding: 100px 8% 130px;
+    background: #eee8da;
+}
+
+.timeline-title {
+    max-width: 850px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: rgba(167, 131, 63, 0.45);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    align-items: center;
+    min-height: 230px;
+}
+
+.timeline-date {
+    padding: 0 35px;
+    color: #a7833f;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.timeline-item.reverse .timeline-date {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: left;
+}
+
+.timeline-dot {
+    position: relative;
+    z-index: 3;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9b76c;
+    border-radius: 50%;
+    background: #183c34;
+    color: #d9b76c;
+    font-size: 14px;
+    box-shadow: 0 0 0 8px #eee8da;
+}
+
+.timeline-content {
+    position: relative;
+    margin: 20px 0;
+    padding: 30px 34px;
+    background: #f8f4eb;
+    border: 1px solid rgba(167, 131, 63, 0.18);
+    box-shadow: 0 15px 35px rgba(24, 60, 52, 0.08);
+    transition: 0.35s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 45px rgba(24, 60, 52, 0.14);
+}
+
+.timeline-item:not(.reverse) .timeline-content {
+    grid-column: 3;
+}
+
+.timeline-item.reverse .timeline-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.era-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #a7833f;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.timeline-content h3 {
+    margin-bottom: 13px;
+    color: #183c34;
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.timeline-content p {
+    color: #68736e;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   HISTORY END
+========================= */
+
+.history-end {
+    position: relative;
+    padding: 120px 10%;
+    text-align: center;
+    background: #183c34;
+    color: #fff;
+    overflow: hidden;
+}
+
+.history-end::before,
+.history-end::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgba(217, 183, 108, 0.15);
+    transform: rotate(45deg);
+}
+
+.history-end::before {
+    left: -150px;
+    top: -80px;
+}
+
+.history-end::after {
+    right: -150px;
+    bottom: -80px;
+}
+
+.history-end-decoration {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 25px;
+    color: #d9b76c;
+    font-size: 23px;
+}
+
+.history-end .section-label {
+    position: relative;
+    z-index: 2;
+}
+
+.history-end h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.history-end h2 span {
+    color: #d9b76c;
+}
+
+.history-end > p:not(.section-label) {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    margin: 25px auto 32px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.history-end .outline-button {
+    position: relative;
+    z-index: 2;
+    border-color: #d9b76c;
+    color: #fff;
+}
+
+.history-end .outline-button:hover {
+    background: #d9b76c;
+    color: #183c34;
+}
+
+
+/* =========================
+   HISTORY RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .history-hero {
+        min-height: 650px;
+        padding: 150px 7% 90px;
+    }
+
+    .history-hero h1 {
+        font-size: 52px;
+    }
+
+    .timeline-section {
+        padding: 80px 7% 100px;
+    }
+
+    .timeline-title {
+        margin-bottom: 60px;
+    }
+
+    .timeline::before {
+        left: 24px;
+    }
+
+    .timeline-item,
+    .timeline-item.reverse {
+        display: block;
+        min-height: auto;
+        padding-left: 65px;
+        margin-bottom: 45px;
+    }
+
+    .timeline-date,
+    .timeline-item.reverse .timeline-date {
+        margin-bottom: 12px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: 0;
+        top: 45px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .timeline-content,
+    .timeline-item:not(.reverse) .timeline-content,
+    .timeline-item.reverse .timeline-content {
+        display: block;
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .history-hero {
+        min-height: 600px;
+    }
+
+    .history-hero h1 {
+        font-size: 44px;
+    }
+
+    .history-label {
+        font-size: 9px;
+        letter

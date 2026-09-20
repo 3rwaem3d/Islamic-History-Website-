@@ -1,11 +1,281 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
+
 <head>
-    <title>Islamic History</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>رحلة في التاريخ الإسلامي</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Islamic History Website</h1>
-    <p>My website is working!</p>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">☪</span>
+
+            <div>
+                <h2>رحلة في التاريخ الإسلامي</h2>
+                <p>إيمان • حضارة • تاريخ</p>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#home" class="active">الرئيسية</a>
+
+            <a href="#history">التاريخ</a>
+
+            <a href="#people">الشخصيات</a>
+
+            <a href="#places">الأماكن</a>
+
+            <a href="#quiz">اختبر معلوماتك</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                ✦ اكتشف عظمة الحضارة الإسلامية ✦
+            </span>
+
+            <h1>
+                رحلة عبر
+                <span>التاريخ الإسلامي</span>
+            </h1>
+
+            <p>
+                اكتشف حكايات الحضارة الإسلامية، وتعرّف على
+                الشخصيات العظيمة والمدن التاريخية والأحداث
+                التي صنعت إرثًا خالدًا عبر العصور.
+            </p>
+
+            <a href="#explore" class="main-btn">
+                ابدأ رحلتك
+                <span>←</span>
+            </a>
+
+        </div>
+
+        <div class="hero-decoration">
+            ☪
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO SECTION ================= -->
+
+    <section class="intro" id="explore">
+
+        <div class="section-heading">
+
+            <span class="small-title">اكتشف تراثنا</span>
+
+            <h2>أبواب إلى حضارة عظيمة</h2>
+
+            <p>
+                رحلة معرفية تأخذك عبر الزمن لاستكشاف تاريخ
+                الحضارة الإسلامية وأبرز محطاتها.
+            </p>
+
+        </div>
+
+
+        <!-- CARDS -->
+
+        <div class="cards-container">
+
+
+            <!-- HISTORY CARD -->
+
+            <div class="card history-card" id="history">
+
+                <div class="card-icon">📜</div>
+
+                <h3>التاريخ الإسلامي</h3>
+
+                <p>
+                    تعرّف على أهم الأحداث والمحطات التاريخية
+                    التي شكّلت مسيرة الحضارة الإسلامية.
+                </p>
+
+                <a href="history.html" class="card-btn">
+                    اكتشف المزيد ←
+                </a>
+
+            </div>
+
+
+            <!-- PEOPLE CARD -->
+
+            <div class="card people-card" id="people">
+
+                <div class="card-icon">👤</div>
+
+                <h3>الشخصيات الإسلامية</h3>
+
+                <p>
+                    اكتشف قصص القادة والعلماء والشخصيات
+                    التي تركت أثرًا خالدًا في التاريخ.
+                </p>
+
+                <a href="people.html" class="card-btn">
+                    اكتشف المزيد ←
+                </a>
+
+            </div>
+
+
+            <!-- PLACES CARD -->
+
+            <div class="card places-card" id="places">
+
+                <div class="card-icon">🕌</div>
+
+                <h3>المدن الإسلامية</h3>
+
+                <p>
+                    انطلق في رحلة بين المدن الإسلامية
+                    التي ازدهرت فيها العلوم والثقافة.
+                </p>
+
+                <a href="places.html" class="card-btn">
+                    اكتشف المزيد ←
+                </a>
+
+            </div>
+
+
+            <!-- CIVILIZATIONS CARD -->
+
+            <div class="card civilization-card" id="civilizations">
+
+                <div class="card-icon">🏛</div>
+
+                <h3>الحضارات والدول</h3>
+
+                <p>
+                    استكشف الدول والعصور الإسلامية
+                    وإسهاماتها في بناء الحضارة الإنسانية.
+                </p>
+
+                <a href="civilizations.html" class="card-btn">
+                    اكتشف المزيد ←
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QURAN SECTION ================= -->
+
+    <section class="quote-section">
+
+        <div class="quote-box">
+
+            <span class="quote-decoration">۞</span>
+
+            <p class="quran-text">
+                لَقَدْ كَانَ فِي قَصَصِهِمْ عِبْرَةٌ
+                لِأُولِي الْأَلْبَابِ
+            </p>
+
+            <p class="quran-translation">
+                لقد كان في قصص السابقين عبرة وعظة لأصحاب العقول.
+            </p>
+
+            <span class="quran-reference">
+                سورة يوسف • الآية 111
+            </span>
+
+        </div>
+
+        <div class="quote-info">
+
+            <span class="small-title">نتعلم من الماضي</span>
+
+            <h2>
+                الماضي يلهم
+                <br>
+                المستقبل
+            </h2>
+
+            <p>
+                التاريخ ليس مجرد أحداث مضت، بل هو إرث
+                نتعلم منه ونستلهم من خلاله دروسًا
+                لبناء مستقبل أفضل.
+            </p>
+
+            <div class="quote-words">
+                تعلّم <span>•</span> تأمّل <span>•</span> انطلق
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUIZ SECTION ================= -->
+
+    <section class="quiz-banner" id="quiz">
+
+        <div>
+            <span class="small-title">هل أنت مستعد؟</span>
+
+            <h2>اختبر معلوماتك عن التاريخ الإسلامي</h2>
+
+            <p>
+                اكتشف ما تعلمته من رحلتك في الحضارة الإسلامية.
+            </p>
+        </div>
+
+        <a href="quiz.html" class="main-btn">
+            ابدأ الاختبار ←
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <h3>رحلة في التاريخ الإسلامي</h3>
+
+        <p>
+            نحفظ الماضي، ونستلهم منه المستقبل.
+        </p>
+
+        <span>
+            © 2026 جميع الحقوق محفوظة
+        </span>
+
+    </footer>
+
 </body>
-</html>
+
+    </html>

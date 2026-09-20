@@ -1,661 +1,563 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --olive: #14291f;
+    --olive-light: #244535;
+    --gold: #d9b56d;
+    --gold-light: #f0d79c;
+    --cream: #f8f3e8;
+    --white: #fffdf7;
+    --text: #25372c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--cream);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background-color: var(--olive);
+    color: var(--white);
 
-    <title>Islamic History | A Journey Through Time</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- ================= NAVBAR ================= -->
-
-    <header class="navbar">
-        <div class="logo">
-            <span class="logo-symbol">☾</span>
-            <span>Islamic History</span>
-        </div>
-
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="history.html">History</a>
-            <a href="people.html">People</a>
-            <a href="places.html">Places</a>
-            <a href="dynasties.html">Dynasties</a>
-            <a href="quiz.html">Quiz</a>
-        </nav>
-    </header>
-
-
-    <!-- ================= HERO ================= -->
-
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-overlay"></div>
-
-            <div class="hero-content">
-
-                <p class="hero-small">A JOURNEY THROUGH TIME</p>
-
-                <h1>
-                    Discover the
-                    <span>Islamic History</span>
-                </h1>
-
-                <p class="hero-description">
-                    Explore centuries of civilization, remarkable people,
-                    magnificent places, and stories that shaped the Islamic world.
-                </p>
-
-                <a href="history.html" class="hero-button">
-                    Start Your Journey
-                    <span>→</span>
-                </a>
-
-            </div>
-
-            <div class="scroll-down">
-                <span>SCROLL TO EXPLORE</span>
-                <div class="scroll-line"></div>
-            </div>
-
-        </section>
-
-
-        <!-- ================= INTRO ================= -->
-
-        <section class="intro-section">
-
-            <p class="section-label">EXPLORE THE PAST</p>
-
-            <h2>
-                A Civilization
-                <span>Worth Discovering</span>
-            </h2>
-
-            <p class="intro-text">
-                Step into the pages of history and discover the people,
-                places, dynasties, and events that shaped one of the world's
-                greatest civilizations.
-            </p>
-
-        </section>
-
-
-        <!-- ================= CATEGORIES ================= -->
-
-        <section class="categories">
-
-            <!-- HISTORY -->
-
-            <a href="history.html" class="category-card">
-
-                <div class="card-image history-image"></div>
-
-                <div class="card-content">
-
-                    <span class="card-number">01</span>
-
-                    <h3>History</h3>
-
-                    <p>
-                        Follow the journey of Islamic civilization
-                        through the centuries.
-                    </p>
-
-                    <span class="card-link">
-                        Explore History →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- PEOPLE -->
-
-            <a href="people.html" class="category-card">
-
-                <div class="card-image people-image"></div>
-
-                <div class="card-content">
-
-                    <span class="card-number">02</span>
-
-                    <h3>People</h3>
-
-                    <p>
-                        Meet the influential figures who left
-                        their mark on history.
-                    </p>
-
-                    <span class="card-link">
-                        Meet the People →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- PLACES -->
-
-            <a href="places.html" class="category-card">
-
-                <div class="card-image places-image"></div>
-
-                <div class="card-content">
-
-                    <span class="card-number">03</span>
-
-                    <h3>Places</h3>
-
-                    <p>
-                        Discover the cities and landmarks
-                        that shaped Islamic civilization.
-                    </p>
-
-                    <span class="card-link">
-                        Discover Places →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- DYNASTIES -->
-
-            <a href="dynasties.html" class="category-card">
-
-                <div class="card-image dynasties-image"></div>
-
-                <div class="card-content">
-
-                    <span class="card-number">04</span>
-
-                    <h3>Dynasties</h3>
-
-                    <p>
-                        Explore the great dynasties that ruled
-                        across the Islamic world.
-                    </p>
-
-                    <span class="card-link">
-                        Explore Dynasties →
-                    </span>
-
-                </div>
-
-            </a>
-
-        </section>
-
-
-        <!-- ================= QUOTE ================= -->
-
-        <section class="quote-section">
-
-            <div class="quote-decoration">❖</div>
-
-            <blockquote>
-                "History is not only about the past.
-                It is a window through which we understand
-                the world we live in today."
-            </blockquote>
-
-            <div class="quote-line"></div>
-
-            <p>
-                LEARN • EXPLORE • REMEMBER
-            </p>
-
-        </section>
-
-
-        <!-- ================= JOURNEY SECTION ================= -->
-
-        <section class="journey-section">
-
-            <div class="journey-content">
-
-                <p class="section-label">YOUR JOURNEY BEGINS HERE</p>
-
-                <h2>
-                    Walk Through
-                    <span>History</span>
-                </h2>
-
-                <p>
-                    From the rise of Islam to the great civilizations
-                    that followed, every era tells a story.
-                </p>
-
-                <a href="history.html" class="outline-button">
-                    Explore the Timeline →
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="footer-logo">
-            <span>☾</span>
-            Islamic History
-        </div>
-
-        <p>
-            Exploring the stories, people, and civilizations
-            that shaped Islamic history.
-        </p>
-
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="history.html">History</a>
-            <a href="people.html">People</a>
-            <a href="places.html">Places</a>
-            <a href="dynasties.html">Dynasties</a>
-            <a href="quiz.html">Quiz</a>
-        </div>
-
-        <div class="copyright">
-            © 2026 Islamic History. All rights reserved.
-        </div>
-
-    </footer>
-
-</body>
-</html>
-/* =========================
-   HISTORY PAGE
-========================= */
-
-.history-hero {
-    position: relative;
-    min-height: 620px;
     display: flex;
     align-items: center;
-    padding: 140px 9% 90px;
+    justify-content: space-between;
+
+    padding: 15px 7%;
+
+    border-bottom: 2px solid var(--gold);
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--white);
+}
+
+.logo-icon {
+    color: var(--gold);
+    font-size: 38px;
+}
+
+.logo h2 {
+    font-family: 'Amiri', serif;
+    font-size: 23px;
+    color: var(--gold-light);
+}
+
+.logo p {
+    font-size: 12px;
+    color: #d5d5c8;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--gold);
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    min-height: 480px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 8%;
+
     background:
         linear-gradient(
             90deg,
-            rgba(12, 38, 34, 0.97),
-            rgba(17, 52, 45, 0.78),
-            rgba(17, 52, 45, 0.35)
+            rgba(20, 41, 31, 0.55),
+            rgba(20, 41, 31, 0.96)
         ),
-        url("https://images.unsplash.com/photo-1564769662533-4f00a87b4056?auto=format&fit=crop&w=2000&q=85")
-        center/cover no-repeat;
-}
+        url("images/hero-mosque.jpg");
 
-.history-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(135deg, rgba(217, 183, 108, 0.12), transparent 40%),
-        linear-gradient(315deg, rgba(217, 183, 108, 0.08), transparent 40%);
-    pointer-events: none;
-}
-
-.history-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    color: #fff;
-}
-
-.history-label {
-    margin-bottom: 22px;
-    color: #d9b76c;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 4px;
-}
-
-.history-hero h1 {
-    font-family: "Playfair Display", serif;
-    font-size: clamp(50px, 7vw, 88px);
-    line-height: 1;
-    font-weight: 500;
-    letter-spacing: -2px;
-}
-
-.history-hero h1 span {
-    display: block;
-    color: #d9b76c;
-}
-
-.history-hero-content > p:last-child {
-    max-width: 600px;
-    margin-top: 30px;
-    color: rgba(255, 255, 255, 0.78);
-    font-size: 15px;
-    line-height: 1.9;
-}
-
-
-/* =========================
-   HISTORY INTRO
-========================= */
-
-.history-intro {
-    padding: 115px 10% 80px;
-    text-align: center;
-    background: #f4efe4;
-}
-
-.history-intro h2,
-.timeline-title h2,
-.history-end h2 {
-    font-family: "Playfair Display", serif;
-    font-size: clamp(38px, 5vw, 62px);
-    line-height: 1.1;
-    font-weight: 500;
-    color: #183c34;
-}
-
-.history-intro h2 span,
-.timeline-title h2 span,
-.history-end h2 span {
-    color: #a7833f;
-}
-
-.history-intro > p:last-child {
-    max-width: 700px;
-    margin: 25px auto 0;
-    color: #68736e;
-    font-size: 15px;
-    line-height: 1.9;
-}
-
-
-/* =========================
-   TIMELINE
-========================= */
-
-.timeline-section {
-    padding: 100px 8% 130px;
-    background: #eee8da;
-}
-
-.timeline-title {
-    max-width: 850px;
-    margin: 0 auto 90px;
-    text-align: center;
-}
-
-.timeline {
-    position: relative;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    background: rgba(167, 131, 63, 0.45);
-    transform: translateX(-50%);
-}
-
-.timeline-item {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 80px 1fr;
-    align-items: center;
-    min-height: 230px;
-}
-
-.timeline-date {
-    padding: 0 35px;
-    color: #a7833f;
-    font-family: "Cinzel", serif;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-align: right;
-}
-
-.timeline-item.reverse .timeline-date {
-    grid-column: 3;
-    grid-row: 1;
-    text-align: left;
-}
-
-.timeline-dot {
-    position: relative;
-    z-index: 3;
-    width: 48px;
-    height: 48px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #d9b76c;
-    border-radius: 50%;
-    background: #183c34;
-    color: #d9b76c;
-    font-size: 14px;
-    box-shadow: 0 0 0 8px #eee8da;
-}
-
-.timeline-content {
-    position: relative;
-    margin: 20px 0;
-    padding: 30px 34px;
-    background: #f8f4eb;
-    border: 1px solid rgba(167, 131, 63, 0.18);
-    box-shadow: 0 15px 35px rgba(24, 60, 52, 0.08);
-    transition: 0.35s ease;
-}
-
-.timeline-content:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 22px 45px rgba(24, 60, 52, 0.14);
-}
-
-.timeline-item:not(.reverse) .timeline-content {
-    grid-column: 3;
-}
-
-.timeline-item.reverse .timeline-content {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.era-tag {
-    display: inline-block;
-    margin-bottom: 12px;
-    color: #a7833f;
-    font-size: 9px;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
-.timeline-content h3 {
-    margin-bottom: 13px;
-    color: #183c34;
-    font-family: "Playfair Display", serif;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 1.25;
-}
-
-.timeline-content p {
-    color: #68736e;
-    font-size: 12px;
-    line-height: 1.9;
-}
-
-
-/* =========================
-   HISTORY END
-========================= */
-
-.history-end {
-    position: relative;
-    padding: 120px 10%;
-    text-align: center;
-    background: #183c34;
-    color: #fff;
+    background-color: var(--olive);
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
-.history-end::before,
-.history-end::after {
-    content: "";
+.hero-overlay {
     position: absolute;
-    width: 240px;
-    height: 240px;
-    border: 1px solid rgba(217, 183, 108, 0.15);
-    transform: rotate(45deg);
+    inset: 0;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(20, 41, 31, 0.35),
+            transparent
+        );
+
+    pointer-events: none;
 }
 
-.history-end::before {
-    left: -150px;
-    top: -80px;
-}
-
-.history-end::after {
-    right: -150px;
-    bottom: -80px;
-}
-
-.history-end-decoration {
+.hero-content {
     position: relative;
-    z-index: 2;
-    margin-bottom: 25px;
-    color: #d9b76c;
+    z-index: 1;
+
+    max-width: 680px;
+    color: var(--white);
+}
+
+.hero-tag {
+    color: var(--gold-light);
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-family: 'Amiri', serif;
+    font-size: clamp(36px, 5vw, 60px);
+
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: var(--gold);
+    display: block;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #e6e5dc;
+
+    max-width: 600px;
+    margin-bottom: 28px;
+}
+
+.main-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 12px 28px;
+
+    background: linear-gradient(
+        135deg,
+        var(--gold-light),
+        var(--gold)
+    );
+
+    color: var(--olive);
+
+    border-radius: 8px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-decoration {
+    position: absolute;
+
+    left: 8%;
+    top: 12%;
+
+    color: rgba(217, 181, 109, 0.15);
+    font-size: 180px;
+}
+
+
+/* ================= INTRO SECTION ================= */
+
+.intro {
+    padding: 70px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.small-title {
+    color: #a17d36;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.section-heading h2 {
+    font-family: 'Amiri', serif;
+    font-size: 38px;
+    color: var(--olive);
+    margin: 8px 0;
+}
+
+.section-heading p {
+    color: #6c716a;
+    font-size: 15px;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+
+    padding: 30px 24px;
+
+    min-height: 275px;
+
+    background: var(--white);
+
+    border: 1px solid #e7dfce;
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(20, 41, 31, 0.10);
+}
+
+.card::after {
+    content: "";
+
+    position: absolute;
+    bottom: -45px;
+    left: -35px;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+    opacity: 0.10;
+
+    background-color: var(--gold);
+}
+
+.card-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--olive);
+    color: var(--gold);
+
+    border-radius: 50%;
+
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    font-family: 'Amiri', serif;
+    font-size: 25px;
+
+    color: var(--olive);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #60665f;
+
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    display: inline-block;
+
+    color: #98732f;
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.card-btn:hover {
+    color: var(--olive);
+    transform: translateX(-4px);
+}
+
+.people-card .card-icon {
+    background-color: #92702f;
+}
+
+.places-card .card-icon {
+    background-color: #315c53;
+}
+
+.civilization-card .card-icon {
+    background-color: #5e554b;
+}
+
+
+/* ================= QURAN SECTION ================= */
+
+.quote-section {
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr;
+
+    gap: 60px;
+    align-items: center;
+
+    padding: 65px 8%;
+
+    background-color: #eee7d7;
+}
+
+.quote-box {
+    text-align: center;
+
+    background: var(--white);
+
+    padding: 35px 25px;
+
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(20, 41, 31, 0.04);
+}
+
+.quote-decoration {
+    font-size: 30px;
+    color: #b18b42;
+}
+
+.quran-text {
+    font-family: 'Amiri', serif;
+
+    font-size: 29px;
+    font-weight: 700;
+
+    color: var(--olive);
+
+    margin: 15px 0;
+}
+
+.quran-translation {
+    font-size: 13px;
+    color: #777;
+
+    margin-bottom: 12px;
+}
+
+.quran-reference {
+    color: #98732f;
+    font-size: 13px;
+}
+
+.quote-info h2 {
+    font-family: 'Amiri', serif;
+    font-size: 38px;
+
+    color: var(--olive);
+    line-height: 1.5;
+
+    margin: 10px 0;
+}
+
+.quote-info p {
+    font-size: 15px;
+    color: #656b63;
+}
+
+.quote-words {
+    margin-top: 20px;
+
+    font-weight: 700;
+    color: var(--olive);
+}
+
+.quote-words span {
+    color: #b18b42;
+    margin: 0 8px;
+}
+
+
+/* ================= QUIZ BANNER ================= */
+
+.quiz-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin: 65px 7%;
+    padding: 35px 40px;
+
+    background: var(--olive);
+    color: var(--white);
+
+    border-radius: 14px;
+    border-right: 5px solid var(--gold);
+}
+
+.quiz-banner h2 {
+    font-family: 'Amiri', serif;
+    font-size: 28px;
+
+    color: var(--gold-light);
+}
+
+.quiz-banner p {
+    font-size: 14px;
+    color: #dddcd2;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    text-align: center;
+
+    padding: 30px 15px;
+
+    background: #102219;
+    color: var(--white);
+
+    border-top: 2px solid var(--gold);
+}
+
+.footer h3 {
+    font-family: 'Amiri', serif;
+    color: var(--gold-light);
     font-size: 23px;
 }
 
-.history-end .section-label {
-    position: relative;
-    z-index: 2;
-}
-
-.history-end h2 {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-}
-
-.history-end h2 span {
-    color: #d9b76c;
-}
-
-.history-end > p:not(.section-label) {
-    position: relative;
-    z-index: 2;
-    max-width: 650px;
-    margin: 25px auto 32px;
-    color: rgba(255, 255, 255, 0.68);
+.footer p {
     font-size: 14px;
-    line-height: 1.9;
+    margin: 8px 0;
 }
 
-.history-end .outline-button {
-    position: relative;
-    z-index: 2;
-    border-color: #d9b76c;
-    color: #fff;
-}
-
-.history-end .outline-button:hover {
-    background: #d9b76c;
-    color: #183c34;
+.footer span {
+    color: #b9c0b7;
+    font-size: 12px;
 }
 
 
-/* =========================
-   HISTORY RESPONSIVE
-========================= */
+/* ================= RESPONSIVE ================= */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
-    .history-hero {
-        min-height: 650px;
-        padding: 150px 7% 90px;
+    .navbar {
+        flex-direction: column;
     }
 
-    .history-hero h1 {
-        font-size: 52px;
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
-    .timeline-section {
-        padding: 80px 7% 100px;
+    .cards-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .timeline-title {
-        margin-bottom: 60px;
-    }
-
-    .timeline::before {
-        left: 24px;
-    }
-
-    .timeline-item,
-    .timeline-item.reverse {
-        display: block;
-        min-height: auto;
-        padding-left: 65px;
-        margin-bottom: 45px;
-    }
-
-    .timeline-date,
-    .timeline-item.reverse .timeline-date {
-        margin-bottom: 12px;
-        padding: 0;
-        text-align: left;
-    }
-
-    .timeline-dot {
-        position: absolute;
-        left: 0;
-        top: 45px;
-        width: 48px;
-        height: 48px;
-    }
-
-    .timeline-content,
-    .timeline-item:not(.reverse) .timeline-content,
-    .timeline-item.reverse .timeline-content {
-        display: block;
-        margin: 0;
+    .quote-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
 }
 
+@media (max-width: 600px) {
 
-@media (max-width: 430px) {
-
-    .history-hero {
-        min-height: 600px;
+    .navbar {
+        padding: 15px 5%;
     }
 
-    .history-hero h1 {
-        font-size: 44px;
+    .nav-links {
+        gap: 12px;
     }
 
-    .history-label {
-        font-size: 9px;
-        letter
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 6%;
+        min-height: 430px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .quote-section {
+        padding: 40px 6%;
+    }
+
+    .quran-text {
+        font-size: 24px;
+    }
+
+    .quiz-banner {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin: 35px 5%;
+        padding: 25px;
+    }
+
+    .quiz-banner h2 {
+        font-size: 24px;
+    }
+
+        }
